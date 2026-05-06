@@ -1,0 +1,251 @@
+.page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 16px;
+  transition: color 0.2s;
+}
+
+.backLink:hover {
+  color: #3b82f6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.section {
+  margin-bottom: 28px;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+/* Info Grid */
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.infoLabel {
+  font-size: 12px;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.infoValue {
+  font-size: 15px;
+  color: #1f2937;
+  font-weight: 500;
+}
+
+/* Address */
+.addressBox {
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  line-height: 1.6;
+}
+
+.addressName {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.addressPhone {
+  color: #6b7280;
+  margin-left: 12px;
+}
+
+.addressText {
+  color: #374151;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Items Table */
+.itemsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.itemsTable th {
+  text-align: left;
+  padding: 10px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.itemsTable td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #f3f4f6;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.itemCell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.itemThumb {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #f3f4f6;
+}
+
+.itemName {
+  color: #1f2937;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.itemName:hover {
+  color: #3b82f6;
+}
+
+.itemPrice {
+  color: #374151;
+}
+
+.itemQty {
+  color: #6b7280;
+}
+
+.itemSubtotal {
+  font-weight: 600;
+  color: #ef4444;
+}
+
+/* Price Summary */
+.priceSummary {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+.priceBox {
+  text-align: right;
+}
+
+.priceRow {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  padding: 4px 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.priceTotal {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ef4444;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  padding-top: 24px;
+  border-top: 2px solid #e5e7eb;
+}
+
+.payBtn {
+  padding: 12px 32px;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.payBtn:hover {
+  background: #2563eb;
+}
+
+.cancelBtn {
+  padding: 12px 32px;
+  background: #fff;
+  color: #ef4444;
+  border: 1px solid #fca5a5;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancelBtn:hover {
+  background: #fef2f2;
+}
+
+.loading {
+  text-align: center;
+  padding: 64px;
+  color: #9ca3af;
+  font-size: 16px;
+}
+
+.error {
+  text-align: center;
+  padding: 64px;
+  color: #ef4444;
+  font-size: 16px;
+}

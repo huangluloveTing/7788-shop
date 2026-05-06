@@ -1,0 +1,226 @@
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 24px;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+/* Order Summary */
+.summaryItems {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.summaryItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.summaryItem:last-child {
+  border-bottom: none;
+}
+
+.summaryThumb {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #f3f4f6;
+}
+
+.summaryName {
+  flex: 1;
+  font-weight: 500;
+  color: #1f2937;
+  font-size: 14px;
+}
+
+.summaryQty {
+  color: #6b7280;
+  font-size: 13px;
+  margin-right: 16px;
+}
+
+.summarySubtotal {
+  font-weight: 600;
+  color: #ef4444;
+  font-size: 14px;
+}
+
+.summaryTotal {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+  background: #f9fafb;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.summaryTotalAmount {
+  color: #ef4444;
+  font-size: 22px;
+  margin-left: 8px;
+}
+
+/* Addresses */
+.addressList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.addressCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.addressCard:hover {
+  border-color: #93c5fd;
+}
+
+.addressCardSelected {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.radio {
+  margin-top: 2px;
+  accent-color: #3b82f6;
+  width: 18px;
+  height: 18px;
+}
+
+.addressContent {
+  flex: 1;
+}
+
+.addressName {
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.addressPhone {
+  color: #6b7280;
+  margin-left: 12px;
+  font-weight: 400;
+}
+
+.addressDetail {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.defaultBadge {
+  display: inline-block;
+  background: #dbeafe;
+  color: #2563eb;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+.emptyAddresses {
+  text-align: center;
+  padding: 32px;
+  color: #6b7280;
+}
+
+.addAddressLink {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  border: 1px dashed #d1d5db;
+  border-radius: 8px;
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.addAddressLink:hover {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+/* Place Order */
+.placeOrderSection {
+  text-align: right;
+  padding-top: 24px;
+  border-top: 2px solid #e5e7eb;
+}
+
+.placeOrderBtn {
+  padding: 14px 48px;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.placeOrderBtn:hover {
+  background: #2563eb;
+}
+
+.placeOrderBtn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.loading {
+  text-align: center;
+  padding: 64px;
+  color: #9ca3af;
+  font-size: 16px;
+}
+
+.loginPrompt {
+  text-align: center;
+  padding: 64px 16px;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.loginPrompt a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+}

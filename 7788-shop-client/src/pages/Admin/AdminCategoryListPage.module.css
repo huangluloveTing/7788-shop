@@ -1,0 +1,15 @@
+.page { max-width: 600px; }
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.title { font-size: 22px; font-weight: 600; }
+.addBtn { padding: 8px 16px; background: var(--color-primary); color: white; border-radius: var(--radius); font-size: 14px; }
+.list { background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius); }
+.item { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; border-bottom: 1px solid var(--color-border); }
+.item:last-child { border-bottom: none; }
+.itemInfo { display: flex; align-items: center; gap: 12px; }
+.itemName { font-weight: 500; }
+.itemMeta { font-size: 13px; color: var(--color-text-secondary); }
+.actions { display: flex; gap: 6px; }
+.editBtn { padding: 4px 10px; font-size: 12px; border: 1px solid var(--color-border); border-radius: 4px; background: var(--color-white); }
+.delBtn { padding: 4px 10px; font-size: 12px; border: 1px solid var(--color-border); border-radius: 4px; background: var(--color-white); color: var(--color-danger); }
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; z-index: 200; }
+.modalInner { background: var(--color-white); border-radius: var(--radius); padding: 20px; width: 360px; }

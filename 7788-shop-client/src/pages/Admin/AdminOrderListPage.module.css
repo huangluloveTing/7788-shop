@@ -1,0 +1,10 @@
+.page { }
+.title { font-size: 22px; font-weight: 600; margin-bottom: 16px; }
+.table { width: 100%; background: var(--color-white); border-radius: var(--radius); border: 1px solid var(--color-border); overflow: hidden; }
+.table th, .table td { padding: 10px 12px; text-align: left; font-size: 14px; border-bottom: 1px solid var(--color-border); }
+.table th { background: var(--color-bg); font-weight: 600; }
+.statusSelect { padding: 4px 8px; border: 1px solid var(--color-border); border-radius: 4px; font-size: 12px; }
+.viewLink { font-size: 13px; color: var(--color-primary); }
+.pagination { display: flex; justify-content: center; gap: 8px; margin-top: 16px; }
+.pageBtn { padding: 6px 12px; border: 1px solid var(--color-border); border-radius: var(--radius); background: var(--color-white); font-size: 13px; }
+.pageBtn:disabled { opacity: 0.5; cursor: default; }

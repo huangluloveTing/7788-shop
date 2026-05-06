@@ -1,0 +1,234 @@
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 24px;
+}
+
+/* Status Tabs */
+.tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.tab {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  color: #374151;
+}
+
+.tabActive {
+  color: #3b82f6;
+  border-bottom-color: #3b82f6;
+}
+
+/* Order Cards */
+.orderList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.orderCard {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px 20px;
+  transition: box-shadow 0.2s;
+}
+
+.orderCard:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.orderNo {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.orderNo span {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.orderItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.orderItemThumb {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #f3f4f6;
+  border: 1px solid #f3f4f6;
+}
+
+.orderFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orderMeta {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.orderTotal {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ef4444;
+}
+
+.orderActions {
+  display: flex;
+  gap: 8px;
+}
+
+.actionBtn {
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.15s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.payBtn {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.payBtn:hover {
+  background: #2563eb;
+}
+
+.cancelBtn {
+  background: #fff;
+  color: #ef4444;
+  border: 1px solid #fca5a5;
+}
+
+.cancelBtn:hover {
+  background: #fef2f2;
+}
+
+.detailBtn {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.detailBtn:hover {
+  background: #e5e7eb;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.pageBtn {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  color: #374151;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+.pageBtn:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.pageBtnActive {
+  background: #3b82f6;
+  color: #fff;
+  border-color: #3b82f6;
+}
+
+.pageBtn:disabled {
+  color: #d1d5db;
+  border-color: #e5e7eb;
+  cursor: not-allowed;
+}
+
+.pageInfo {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0 8px;
+}
+
+/* States */
+.loading {
+  text-align: center;
+  padding: 64px;
+  color: #9ca3af;
+  font-size: 16px;
+}
+
+.empty {
+  text-align: center;
+  padding: 64px 16px;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.emptyLink {
+  display: inline-block;
+  margin-top: 16px;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+}
