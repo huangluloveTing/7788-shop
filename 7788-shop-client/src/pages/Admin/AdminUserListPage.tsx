@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { adminApi } from '../../api/adminApi';
 import { formatDate } from '../../utils';
-import toast from 'react-hot-toast';
 
 const styles = {
   table: { width: '100%', background: 'var(--color-white)', borderRadius: 'var(--radius)', border: '1px solid var(--color-border)' },
@@ -25,14 +24,6 @@ export default function AdminUserListPage() {
     } catch { /* */ }
   };
   useEffect(() => { fetchUsers(); }, [page]);
-
-  const toggleRole = async (id: number) => {
-    try {
-      await adminApi.listUsers({ page: 1, pageSize: 1 });
-      toast.success('User updated');
-      fetchUsers();
-    } catch { toast.error('Failed'); }
-  };
 
   const totalPages = Math.ceil(total / 10);
 
